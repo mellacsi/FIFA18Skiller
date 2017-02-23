@@ -8,7 +8,7 @@ import javax.jws.WebService;
         portName = "SommaWebServicePort",
         serviceName = "SommaWebService",
         targetNamespace = "http://www.supsi.ch",
-        endpointInterface = "SommaWebService")
+        endpointInterface = "ch.supsi.SommaWebService")
 public class SommaWebServiceImpl implements SommaWebService {
 
     public int somma(int add1, int add2) {
