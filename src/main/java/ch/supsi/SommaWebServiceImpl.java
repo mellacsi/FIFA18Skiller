@@ -1,4 +1,5 @@
-// WS Implementation of the interface
+package ch.supsi;
+// WS Implementation of the interface, ASO Course Example LS Feb 2017
 import javax.ejb.Stateless;
 import javax.jws.WebService;
 

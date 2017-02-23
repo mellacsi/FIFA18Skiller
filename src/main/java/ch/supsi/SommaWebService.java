@@ -1,3 +1,4 @@
+package ch.supsi;
 // WS Interface, ASO Course Example LS Feb 2017
 import javax.jws.WebService;
 
