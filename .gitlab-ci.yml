@@ -1,0 +1,15 @@
+maven-build:
+  stage: build
+  script: "mvn package -B"
+  artifacts:
+    paths:
+      - target/*.war
+  only:
+  - master
+
+pages-deploy:
+  stage: deploy
+  script:
+  - cp target/*.war /opt/apache-tomee-plus-7.0.2/webapps/.
+  only:
+  - master
