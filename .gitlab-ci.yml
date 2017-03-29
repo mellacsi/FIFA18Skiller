@@ -1,3 +1,16 @@
+stages:
+  - build
+  - test
+  - database
+  - deploy
+
+manage-database:
+  stage: database
+  script:
+  - mysql -u root -p123465 < db.sql
+  only:
+  - master
+
 maven-build:
   stage: build
   script: "mvn package -B"
