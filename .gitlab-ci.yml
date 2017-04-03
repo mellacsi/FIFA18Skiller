@@ -1,15 +1,15 @@
 stages:
   - build
   - test
-  - database
+#  - database
   - deploy
 
-manage-database:
-  stage: database
-  script:
-  - mysql -u root -p123465 < db.sql
-  only:
-  - master
+#manage-database:
+#  stage: database
+#  script:
+#  - mysql -u root -p123465 < db.sql
+#  only:
+#  - master
 
 maven-build:
   stage: build
