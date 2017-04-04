@@ -1,2 +1,2 @@
 Link for WS
-http://isin03.dti.supsi.ch:9090/new-REST-jax-rs-0.0.1/webservices/SommaWebServiceImpl?wsdl
+http://isin03.dti.supsi.ch:9090/new-rest-jax-rs-0.0.1/parts
