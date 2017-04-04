@@ -6,7 +6,7 @@
   <packaging>war</packaging>
   <name>REST-JAX-RS</name>
   <parent>
-  	<groupId>org.spring.framework.boot</groupId>
+  	<groupId>org.springframework.boot</groupId>
   	<artifactId>spring-boot-starter-parent</artifactId>
   	<version>1.5.2.RELEASE</version>
   </parent>
