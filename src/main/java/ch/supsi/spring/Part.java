@@ -25,10 +25,10 @@ public class Part {
 	}
 
 	public void setDescription(String description) {
-		this.descritpion = descritpion;
+		this.description = description;
 	}
 
-	public void setDescription() {
-		return descritpion;
+	public String setDescription() {
+		return description;
 	}
 }
