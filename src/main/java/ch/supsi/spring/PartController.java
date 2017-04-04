@@ -20,8 +20,8 @@ public class PartController {
 
 	@RequestMapping(value="/parts", method = RequestMethod.POST)
 	public Part createPart(
-			@RequestParam() String name;
-			@RequestParam() String description;
+			@RequestParam String name;
+			@RequestParam String description;
 	) {
 		Part part = new Part(this.parts.size()+1, name, description);
 		this.parts.add(part);
