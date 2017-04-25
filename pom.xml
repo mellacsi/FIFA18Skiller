@@ -5,6 +5,7 @@
   <version>0.0.1</version>
   <packaging>war</packaging>
   <name>REST-JAX-RS</name>
+      
   <parent>
   	<groupId>org.springframework.boot</groupId>
   	<artifactId>spring-boot-starter-parent</artifactId>
@@ -45,6 +46,9 @@
   </dependencies>
   
   <build>
+
+    <finalName>new-rest-jax-rs-template</finalName>
+
   	<plugins>
   		<plugin>
   		  <groupId>org.springframework.boot</groupId>
