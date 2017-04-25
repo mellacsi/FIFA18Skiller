@@ -5,10 +5,6 @@
   <version>0.0.1</version>
   <packaging>war</packaging>
   <name>REST-JAX-RS</name>
-  
-  <build>
-    <finalName>new-rest-jax-rs-template</finalName>
-  </build>
       
   <parent>
   	<groupId>org.springframework.boot</groupId>
@@ -50,6 +46,9 @@
   </dependencies>
   
   <build>
+
+    <finalName>new-rest-jax-rs-template</finalName>
+
   	<plugins>
   		<plugin>
   		  <groupId>org.springframework.boot</groupId>
