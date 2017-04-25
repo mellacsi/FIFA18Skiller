@@ -1,2 +1,4 @@
 Link for WS
-http://isin03.dti.supsi.ch:9090/new-REST-jax-rs-0.0.1/webservices/SommaWebServiceImpl?wsdl
+OLD Link for WS http://isin03.dti.supsi.ch:9090/new-rest-jax-rs-0.0.1/parts
+Now (25.4.17) with finalName set:
+Link for WS http://isin03.dti.supsi.ch:9090/new-rest-jax-rs-template/parts
