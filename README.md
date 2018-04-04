@@ -1,7 +1,9 @@
 # FifaSkiller
 ***
 
-##Lista endpoints:
+## Lista endpoints:
+***
+
 
 * Lista giocatori:
     *  `GET` /players
@@ -19,7 +21,10 @@
 * Lista giocatori rapporto prezzo/abilità:
     *  `GET` /players/priceonability
 
-##Dati letti dal file .csv:
+## Dati letti dal file .csv:
+***
+
+
 | Indice | Attributo |
 | ------------- | ------------- |
 |0||Indice|
