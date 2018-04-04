@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the home of this web site">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="user" content="Simone Mellace">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIFA18Skiller - find your player</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+            </button>
+            <a tabindex="1" class="navbar-brand" th:href="@{/}">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a tabindex="3" th:href="@{/contacts}">Contatti</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav" layout:fragment="leftPanel">
+        </div>
+        <div class="col-sm-8 text-left">
+            <main layout:fragment="main">
+                <p>Contenuto testuale</p>
+            </main>
+        </div>
+        <div class="col-sm-2 sidenav">
+            <div class="well">
+                <p>Spazio ADS</p>
+            </div>
+            <div class="well">
+                <p>Spazio Sponsor</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <small>© Simone MellaceAll rights reserved</small>
+</footer>
+<th:block layout:fragment="script">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</th:block>
+</body>
+</html>

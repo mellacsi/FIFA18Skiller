@@ -4,7 +4,7 @@
   <artifactId>new-rest-jax-rs</artifactId>
   <version>0.0.1</version>
   <packaging>war</packaging>
-  <name>REST-JAX-RS</name>
+  <name>REST-FIFASKILLER</name>
       
   <parent>
   	<groupId>org.springframework.boot</groupId>
@@ -28,14 +28,40 @@
 	<dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
+        <version>
+            1.5.2.RELEASE
+        </version>
 	</dependency>
-	<dependency>
+    <dependency>
+      <groupId>org.webjars</groupId>
+      <artifactId>font-awesome</artifactId>
+      <version>5.0.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.thymeleaf.extras</groupId>
+      <artifactId>thymeleaf-extras-springsecurity4</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.opencsv</groupId>
+      <artifactId>opencsv</artifactId>
+      <version>3.3</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-csv</artifactId>
+      <version>1.5</version>
+    </dependency>
+    <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-tomcat</artifactId>
+      <version>1.5.2.RELEASE</version>
 	</dependency>
 	<dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-test</artifactId>
+        <version>
+            1.5.2.RELEASE
+        </version>
       <scope>test</scope>
 	</dependency>
 	<dependency>
@@ -46,9 +72,7 @@
   </dependencies>
   
   <build>
-
     <finalName>new-rest-jax-rs-template</finalName>
-
   	<plugins>
   		<plugin>
   		  <groupId>org.springframework.boot</groupId>
