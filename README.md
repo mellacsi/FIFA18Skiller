@@ -2,18 +2,6 @@
 ### Simone Mellace
 ***
 
-##Librerie
-http://www.chartjs.org/ per grafici
-guida http://www.chartjs.org/docs/latest/getting-started/integration.html
-
-http://www.chartjs.org/samples/latest/scriptable/bubble.html
-http://www.chartjs.org/samples/latest/scales/time/financial.html
-http://www.chartjs.org/samples/latest/charts/area/line-boundaries.html
-http://www.chartjs.org/samples/latest/charts/area/radar.html
-
-
-
-
 ## Lista endpoints:
 ***
 
@@ -37,6 +25,7 @@ http://www.chartjs.org/samples/latest/charts/area/radar.html
 ## Dati letti dal file .csv:
 ***
 
+* Numero di giocatori disponibili: 17982
 
 | Indice | Attributo |
 | ------------- | ------------- |
@@ -115,8 +104,3 @@ http://www.chartjs.org/samples/latest/charts/area/radar.html
 |72|RW|
 |73|RWB|
 |74|ST|
- 
-* Numero di giocatori disponibili: 17982
-
-* Lista dei ruoli disponibili:
-    * https://www.fifauteam.com/fifa-ultimate-team-positions-and-tactics/
