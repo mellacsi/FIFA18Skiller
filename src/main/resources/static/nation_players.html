@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the home of this web site">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="user" content="Simone Mellace">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrapRestyle.css">
+    <link href="/webjars/font-awesome/5.0.6/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <title>FIFA18Skiller - find your player</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a tabindex="1" class="navbar-brand" href="/">
+                <img src="icons/home_icon.jpg" alt="Home icon" style="height:35px; width:38px;">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a tabindex="2" href="/nation_players.html">Tutti per nazionalità</a></li>
+                <li><a tabindex="3" href="/find_players.html">Cerca per nome</a></li>
+                <li><a tabindex="4" href="/search_by_price.html">Cerca per prezzo</a></li>
+                <li><a tabindex="5" href="/search_by_wage.html">Cerca per stipendio</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+        </div>
+        <div class="col-sm-8 text-left">
+            <main>
+                <div>
+                    <h1>FIFASKILLER</h1>
+                    <hr>
+                    <h3>Giocatori per nazione</h3>
+                    <div>Di seguito vengono riportati le quantità dei giocatori presenti sul videogioco, divisi per nazione. Ogni giocatore ha singola nazionalità.</div>
+
+                    <canvas id="myChart" width="400" height="200"></canvas>
+
+                    <br>
+                    <br>
+                    <table class="table table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">Nazione</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Argentina">Argentina</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Australia">Australia</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Austria">Austria</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Belgium">Belgium</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Bolivia">Bolivia</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Brazil">Brazil</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Bulgaria">Bulgaria</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Cameroon">Cameroon</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Canada">Canada</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Chile">Chile</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=China PR">China PR</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Colombia">Colombia</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Côte d'Ivoire">Côte d'Ivoire</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Czech Republic">Czech Republic</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Denmark">Denmark</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Ecuador">Ecuador</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Egypt">Egypt</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=England">England</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Finland">Finland</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=France">France</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Germany">Germany</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Greece">Greece</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Hungary">Hungary</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Iceland">Iceland</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=India">India</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Ireland">Ireland</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Italy">Italy</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Mexico">Mexico</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Netherlands">Netherlands</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=New Zealand">New Zealand</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Northern Ireland">Northern Ireland</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Norway">Norway</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Paraguay">Paraguay</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Peru">Peru</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Poland">Poland</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Portugal">Portugal</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Romania">Romania</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Russia">Russia</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Saudi Arabia">Saudi Arabia</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Scotland">Scotland</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Slovenia">Slovenia</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=South Africa">South Africa</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Spain">Spain</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Sweden">Sweden</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Switzerland">Switzerland</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Turkey">Turkey</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=United States">United States</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Uruguay">Uruguay</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Venezuela">Venezuela</a></td>
+                        </tr>
+                        <tr>
+                            <td scope="row"><a href="details.html?nationality=Wales">Wales</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+        <div class="col-sm-2 sidenav">
+
+            <div>
+                <a href="https://www.futhead.com/18/players/?bin_platform=ps" target="_blank">
+                    <img class="well" src="icons/futhead_logo.png" alt="SMC logo" style="max-width: 150px; max-height: 190px">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.futwiz.com/en/fifa18/players" target="_blank">
+                    <img class="well" src="icons/futwiz_logo.png" alt="Raifasen logo" style="max-width: 150px; max-height: 190px; background-color: black">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.futbin.com/18/players" target="_blank">
+                    <img class="well" src="icons/futbin_logo.png" alt="Winteler logo" style="max-width: 150px; max-height: 190px">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <small>Simone Mellace © All rights reserved</small>
+</footer>
+<block layout:fragment="script">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/nation_players_js.js"></script>
+</block>
+</body>
+</html>

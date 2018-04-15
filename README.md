@@ -1,5 +1,18 @@
 # FifaSkiller
+### Simone Mellace
 ***
+
+##Librerie
+http://www.chartjs.org/ per grafici
+guida http://www.chartjs.org/docs/latest/getting-started/integration.html
+
+http://www.chartjs.org/samples/latest/scriptable/bubble.html
+http://www.chartjs.org/samples/latest/scales/time/financial.html
+http://www.chartjs.org/samples/latest/charts/area/line-boundaries.html
+http://www.chartjs.org/samples/latest/charts/area/radar.html
+
+
+
 
 ## Lista endpoints:
 ***
@@ -11,7 +24,7 @@
     *  `GET` /players/role/{player_roles}
 * Giocatore:
     *  `GET` /player/id/{player_id}
-    *  `GET` /players/name/{player_name}"
+    *  `GET` /players/name/{player_name}
 * Lista giocatori per attributo:
     *  `GET` /players/attribute/{player_attribute}
 * Lista giocatori con valore sotto una cifra:
@@ -106,4 +119,4 @@
 * Numero di giocatori disponibili: 17982
 
 * Lista dei ruoli disponibili:
-    * https://gaming.stackexchange.com/questions/167318/what-do-fifa-14-position-acronyms-mean
+    * https://www.fifauteam.com/fifa-ultimate-team-positions-and-tactics/

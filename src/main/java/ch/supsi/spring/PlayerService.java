@@ -17,7 +17,7 @@ public class PlayerService {
     @PostConstruct
     public void init() throws Exception{
         //load file
-        Reader in = new FileReader("./src/main/resources/dataset/CompleteDataset.csv");
+        Reader in = new FileReader("./src/main/resources/static/dataset/CompleteDataset.csv");
         Iterable<CSVRecord> records = CSVFormat.RFC4180.parse(in);
 
         int counter = 0;
@@ -229,32 +229,24 @@ public class PlayerService {
         return findedPlayers;
     }
 
-    public List<Player> getFromPrice(int player_price) {
-        List<Player> findedPlayers = new ArrayList<>();
-        int price;
-        for (Player player: players) {
-            price = setDigitalPriceOrWage(player, true);
 
-            if(price <= player_price)
-                findedPlayers.add(player);
-        }
-        findedPlayers.sort((o1, o2) -> (int)o1.compareToPrice(o2));
-        return findedPlayers;
-    }
 
     private int setDigitalPriceOrWage(Player player, boolean flag) {
-        if(player.getPriceOnAbility() != -1)
-            if(flag)
+        if(player.getPriceOnAbility() != -1) {
+            if (flag)
                 return player.getDigitalValue();
             else
                 return player.getDigitalWage();
-
+        }
         int price;
 
         String onlyPrice;
-        boolean minusZero = false;
-        if(player.getValue().contains(".5") || player.getWage().contains(".5"))
-            minusZero = true;
+        boolean minusZeroWage = false;
+        boolean minusZeroPrice = false;
+        if(player.getValue().contains(".5"))
+            minusZeroPrice = true;
+        if(player.getWage().contains(".5"))
+            minusZeroWage = true;
 
         if(flag)
             onlyPrice = player.getValue().replace(".", "");
@@ -265,7 +257,7 @@ public class PlayerService {
         if(onlyPrice.contains("K")){
             String[] currentPrice = onlyPrice.split("K");
             String newPrice = currentPrice[0];
-            if(minusZero)
+            if((minusZeroWage && !flag) || (minusZeroPrice && flag))
                 newPrice = newPrice + "00";
             else
                 newPrice = newPrice + "000";
@@ -273,7 +265,8 @@ public class PlayerService {
         }else if(onlyPrice.contains("M")){
             String[] currentPrice = onlyPrice.split("M");
             String newPrice = currentPrice[0];
-            if(minusZero)
+
+            if((minusZeroWage && !flag) || (minusZeroPrice && flag))
                 newPrice = newPrice + "00000";
             else
                 newPrice = newPrice + "000000";
@@ -288,6 +281,19 @@ public class PlayerService {
             player.setDigitalWage(price);
 
         return price;
+    }
+
+    public List<Player> getFromPrice(int player_price) {
+        List<Player> findedPlayers = new ArrayList<>();
+        int price;
+        for (Player player: players) {
+            price = setDigitalPriceOrWage(player, true);
+
+            if(price <= player_price)
+                findedPlayers.add(player);
+        }
+        findedPlayers.sort((o1, o2) -> (int)o1.compareToPrice(o2));
+        return findedPlayers;
     }
 
     public List<Player> getFromWage(int player_wage) {

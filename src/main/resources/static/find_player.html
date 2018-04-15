@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the home of this web site">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="user" content="Simone Mellace">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrapRestyle.css">
+    <link href="/webjars/font-awesome/5.0.6/web-fonts-with-css/css/fontawesome-all.css" rel="stylesheet">
+    <title>FIFA18Skiller - find your player</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a tabindex="1" class="navbar-brand" href="/">
+                <img src="icons/home_icon.jpg" alt="Home icon" style="height:35px; width:38px;">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a tabindex="2" href="/nation_players.html">Tutti per nazionalità</a></li>
+                <li><a tabindex="3" href="/find_players.html">Cerca per nome</a></li>
+                <li><a tabindex="4" href="/search_by_price.html">Cerca per prezzo</a></li>
+                <li><a tabindex="5" href="/search_by_wage.html">Cerca per stipendio</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid text-center">
+    <div class="row content">
+        <div class="col-sm-2 sidenav">
+        </div>
+        <div class="col-sm-8 text-left">
+            <main>
+                <div>
+                    <h1>FIFASKILLER</h1>
+                    <p>Questa è la fantastica pagina iniziale del FIFASKILLER.</p>
+                    <hr>
+                    <h3>Specifiche giocatore</h3>
+                    <div>Di seguito vengono riportate dapprima le specifiche più rilevanti del giocatore scelto e in seguito tutte le altre.</div>
+
+                    <canvas id="radar-chart" width="800" height="600"></canvas>
+
+                    <br><br>
+                    <div class="tableSpace"></div>
+                </div>
+            </main>
+        </div>
+        <div class="col-sm-2 sidenav">
+
+            <div>
+                <a href="https://www.futhead.com/18/players/?bin_platform=ps" target="_blank">
+                    <img class="well" src="icons/futhead_logo.png" alt="SMC logo" style="max-width: 150px; max-height: 190px">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.futwiz.com/en/fifa18/players" target="_blank">
+                    <img class="well" src="icons/futwiz_logo.png" alt="Raifasen logo" style="max-width: 150px; max-height: 190px; background-color: black">
+                </a>
+            </div>
+            <div>
+                <a href="https://www.futbin.com/18/players" target="_blank">
+                    <img class="well" src="icons/futbin_logo.png" alt="Winteler logo" style="max-width: 150px; max-height: 190px">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+    <small>Simone Mellace © All rights reserved</small>
+</footer>
+<block layout:fragment="script">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/find_player_js.js"></script>
+</block>
+</body>
+</html>
