@@ -5,9 +5,6 @@
 ## Lista endpoints:
 ***
 
-## Lista endpoints:
-***
-
 * Lista giocatori:
     *  `GET` /players
     *  `GET` /players/nationality/{player_nation}
@@ -27,8 +24,8 @@
 ## Dati letti dal file .csv:
 ***
 
-
 * Numero di giocatori disponibili: 17982
+* Attributi per ogni giocatore
 
 | Indice | Attributo |
 | ------------- | ------------- |

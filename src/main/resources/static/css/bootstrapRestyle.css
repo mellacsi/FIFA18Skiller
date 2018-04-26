@@ -21,14 +21,6 @@ footer {
     padding: 15px;
 }
 
-.txt-red{
-    color:red;
-}
-
-.txt-green{
-    color:green;
-}
-
 /* On small screens, set height to 'auto' for sidenav and grid */
 @media screen and (max-width: 767px) {
     .sidenav {

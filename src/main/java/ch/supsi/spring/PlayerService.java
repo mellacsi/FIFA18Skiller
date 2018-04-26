@@ -13,7 +13,6 @@ import java.util.List;
 public class PlayerService {
     private List<Player> players = new ArrayList<>();
 
-
     @PostConstruct
     public void init() throws Exception{
         //load file
@@ -22,6 +21,7 @@ public class PlayerService {
 
         int counter = 0;
         ArrayList<ArrayList<String>> modifiedRecords = new ArrayList<>();
+
         for (CSVRecord record : records) {
             ArrayList<String> thisRecord = new ArrayList<>();
             for (String field : record) {
@@ -29,7 +29,6 @@ public class PlayerService {
             }
             modifiedRecords.add(thisRecord);
         }
-
 
         for (ArrayList<String> record : modifiedRecords) {
             if (counter == 0) {
@@ -56,9 +55,9 @@ public class PlayerService {
                             double c = a-b;
                             record.set(i, c+"");
                         }
-
                     }
                 }
+
                 p.setMyId(Integer.parseInt(record.get(0)));
                 p.setName(record.get(1));
                 p.setAge(Integer.parseInt(record.get(2)));
@@ -228,8 +227,6 @@ public class PlayerService {
         findedPlayers.sort((o1, o2) -> (int)o1.compareToAttibute(player_attribute, o2));
         return findedPlayers;
     }
-
-
 
     private int setDigitalPriceOrWage(Player player, boolean flag) {
         if(player.getPriceOnAbility() != -1) {
