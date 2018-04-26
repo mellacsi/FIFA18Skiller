@@ -30,6 +30,7 @@ public class PlayerService {
             modifiedRecords.add(thisRecord);
         }
 
+
         for (ArrayList<String> record : modifiedRecords) {
             if (counter == 0) {
                 System.out.println("----------------------ATTRIBUTES----------------------");
