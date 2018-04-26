@@ -5,6 +5,8 @@
 ## Lista endpoints:
 ***
 
+## Lista endpoints:
+***
 
 * Lista giocatori:
     *  `GET` /players
@@ -24,6 +26,7 @@
 
 ## Dati letti dal file .csv:
 ***
+
 
 * Numero di giocatori disponibili: 17982
 
